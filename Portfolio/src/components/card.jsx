@@ -1,8 +1,11 @@
-export default function card() {
+import PropTypes from "prop-types";
+
+export default function Card({ onClose }) {
   function showCard() {
-    // je veux que au click il affiche la card
     console.log("click");
+    onClose(); // Informe le parent que la carte doit être fermée
   }
+
   return (
     <div className="card" onClick={showCard}>
       <h1>Card :</h1>
@@ -15,3 +18,7 @@ export default function card() {
     </div>
   );
 }
+
+Card.propTypes = {
+  onClose: PropTypes.func.isRequired,
+};

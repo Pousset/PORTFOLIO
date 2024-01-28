@@ -1,6 +1,13 @@
-import showCard from "./card.jsx";
+import { useState } from "react";
+import Card from "./card.jsx"; // Assurez-vous que le chemin du composant Card est correct
 
-export default function main() {
+export default function Main() {
+  const [isCardVisible, setCardVisibility] = useState(false);
+
+  function toggleCardVisibility() {
+    setCardVisibility(!isCardVisible);
+  }
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,7 +49,7 @@ export default function main() {
                   />
                 </svg>
               </a>
-              <a className="contact" onClick={showCard}>
+              <a className="contact" href="#" onClick={toggleCardVisibility}>
                 Contact
                 <svg
                   className="contact-svg"
@@ -72,6 +79,9 @@ export default function main() {
           </div>
         </div>
       </nav>
+
+      {/* Affichez la carte uniquement si isCardVisible est vrai */}
+      {isCardVisible && <Card onClose={toggleCardVisibility} />}
     </div>
   );
 }

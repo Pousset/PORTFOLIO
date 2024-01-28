@@ -1,0 +1,54 @@
+#root {
+  margin: auto;
+}
+
+.main-text {
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 50%;
+  text-align: center;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: auto;
+  color: red;
+  background-color: grey;
+}
+
+.card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}

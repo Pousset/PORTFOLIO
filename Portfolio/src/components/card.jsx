@@ -8,13 +8,12 @@ export default function Card({ onClose }) {
 
   return (
     <div className="card" onClick={showCard}>
-      <h1>Card :</h1>
-      <h3>Nom :</h3>
-      <h3>Prénom :</h3>
-      <h3>Age :</h3>
-      <h3>Adresse :</h3>
-      <h3>Mail :</h3>
-      <h3>Téléphone :</h3>
+      <h1>Presentation :</h1>
+      <h3>Nom : PIETTE</h3>
+      <h3>Prénom : Mathis</h3>
+      <h3>Age : 26ans</h3>
+      <h3>Mail : mathispiette@gmail.com</h3>
+      <h3>Téléphone : 06.79.43.21.20</h3>
     </div>
   );
 }

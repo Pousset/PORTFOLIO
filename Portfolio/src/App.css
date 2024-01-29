@@ -40,11 +40,19 @@
 .card {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  border-radius: 25px;
+  justify-content: center;
   width: auto;
-  color: red;
-  background-color: grey;
+  border: 5px solid rgb(102, 30, 78);
+  border-radius: 25px;
+  width: 40%;
+  color: violet;
+  background-color: rgba(128, 128, 128, 0.815);
+  background: linear-gradient(
+    69.9deg,
+    rgb(76, 79, 106) 3.2%,
+    rgb(118, 124, 163) 97.6%
+  );
+  opacity: 0.5;
 }
 
 .card h1 {

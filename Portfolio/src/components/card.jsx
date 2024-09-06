@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export default function Card({ onClose }) {
   function showCard() {
     console.log("click");
-    onClose(); // Informe le parent que la carte doit être fermée
+    onClose(); // Appeler la fonction onClose pour fermer la carte
   }
 
   return (
@@ -18,6 +18,9 @@ export default function Card({ onClose }) {
   );
 }
 
+
+
 Card.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
+

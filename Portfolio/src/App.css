@@ -23,7 +23,7 @@
   justify-content: center;
 }
 
-.projects {
+.Project_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,16 @@
   opacity: 0.5;
 }
 
+
+
+
 .card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project_card h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;

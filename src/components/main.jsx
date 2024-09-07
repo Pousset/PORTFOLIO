@@ -1,15 +1,16 @@
 import { useState } from "react";
-import Card from "./card.jsx"; // Assurez-vous que le chemin du composant Card est correct
-import Project_card from "./project_card.jsx"; // Assurez-vous que le chemin du composant Card est correct
+import { Card, ProjectCard } from "./card.jsx"; // Assurez-vous que le chemin du composant est correct
 
-export default function Main() {
+function Main() {
   const [isCardVisible, setCardVisibility] = useState(false);
-  const [isProject_cardVisible, setProject_cardVisibility] = useState(false);
+  const [isProjectCardVisible, setProjectCardVisibility] = useState(false);
+
   function toggleCardVisibility() {
     setCardVisibility(!isCardVisible);
   }
-  function toggleProject_cardVisibility() {
-    setProject_cardVisibility(!isProject_cardVisible);
+
+  function toggleProjectCardVisibility() {
+    setProjectCardVisibility(!isProjectCardVisible);
   }
 
   return (
@@ -36,7 +37,7 @@ export default function Main() {
                 </svg>
               </a>
 
-              <a className="Project_card" href="#" onClick={toggleProject_cardVisibility}>
+              <a className="Project_card" href="#" onClick={toggleProjectCardVisibility}>
                 Projects
                 <svg
                   viewBox="0 0 64 64"
@@ -86,7 +87,9 @@ export default function Main() {
 
       {/* Affichez la carte uniquement si isCardVisible est vrai */}
       {isCardVisible && <Card onClose={toggleCardVisibility} />}
-      {isProject_cardVisible && <Project_card onClose={toggleProject_cardVisibility} />}
+      {isProjectCardVisible && <ProjectCard onClose={toggleProjectCardVisibility} />}
     </div>
   );
 }
+
+export default Main;

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function Card({ onClose }) {
+export function Card({ onClose }) {
   function showCard() {
     console.log("click");
     onClose(); // Appeler la fonction onClose pour fermer la carte
@@ -18,9 +18,23 @@ export default function Card({ onClose }) {
   );
 }
 
-
-
 Card.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
+export function ProjectCard({ onClose }) {
+  function showProjectCard() {
+    console.log("click");
+    onClose(); // Appeler la fonction onClose pour fermer la carte
+  }
+
+  return (
+    <div className="Project_card" onClick={showProjectCard}>
+      <h1>Coucou</h1>
+    </div>
+  );
+}
+
+ProjectCard.propTypes = {
+  onClose: PropTypes.func.isRequired,
+};

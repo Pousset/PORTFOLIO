@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import CVImage from "../assets/CV_Mathis_Piette.jpg"; // Assurez-vous que le chemin est correct
 
 export function Card({ onClose }) {
   function showCard() {
@@ -36,5 +37,22 @@ export function ProjectCard({ onClose }) {
 }
 
 ProjectCard.propTypes = {
+  onClose: PropTypes.func.isRequired,
+};
+
+export function Home({ onClose }) {
+  function showHome() {
+    console.log("click");
+    onClose(); // Appeler la fonction onClose pour fermer la section Home
+  }
+
+  return (
+    <div className="home-section" onClick={showHome}>
+      <img src={CVImage} alt="CV Mathis Piette" />
+    </div>
+  );
+}
+
+Home.propTypes = {
   onClose: PropTypes.func.isRequired,
 };

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import CVImage from "../assets/CV_Mathis_Piette.jpg"; // Assurez-vous que le chemin est correct
 
 export function Card({ onClose }) {
   function showCard() {
@@ -47,8 +48,7 @@ export function Home({ onClose }) {
 
   return (
     <div className="home-section" onClick={showHome}>
-      <h1>Bienvenue sur la page d'accueil</h1>
-      <p>Ceci est la section d'accueil de votre portfolio.</p>
+      <img src={CVImage} alt="CV Mathis Piette" />
     </div>
   );
 }

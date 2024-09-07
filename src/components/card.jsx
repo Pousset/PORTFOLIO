@@ -38,3 +38,21 @@ export function ProjectCard({ onClose }) {
 ProjectCard.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
+
+export function Home({ onClose }) {
+  function showHome() {
+    console.log("click");
+    onClose(); // Appeler la fonction onClose pour fermer la section Home
+  }
+
+  return (
+    <div className="home-section" onClick={showHome}>
+      <h1>Bienvenue sur la page d'accueil</h1>
+      <p>Ceci est la section d'accueil de votre portfolio.</p>
+    </div>
+  );
+}
+
+Home.propTypes = {
+  onClose: PropTypes.func.isRequired,
+};

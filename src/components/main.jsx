@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Card, ProjectCard } from "./card.jsx"; // Assurez-vous que le chemin du composant est correct
+import { Card, ProjectCard, Home } from "./card.jsx"; // Assurez-vous que le chemin du composant est correct
 
 function Main() {
   const [isCardVisible, setCardVisibility] = useState(false);
   const [isProjectCardVisible, setProjectCardVisibility] = useState(false);
+  const [isHomeVisible, setHomeVisibility] = useState(false);
 
   function toggleCardVisibility() {
     setCardVisibility(!isCardVisible);
@@ -11,6 +12,10 @@ function Main() {
 
   function toggleProjectCardVisibility() {
     setProjectCardVisibility(!isProjectCardVisible);
+  }
+
+  function toggleHomeVisibility() {
+    setHomeVisibility(!isHomeVisible);
   }
 
   return (
@@ -24,7 +29,7 @@ function Main() {
           {/* <!-- Navbar Links --> */}
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="main-nav">
-              <a className="home" aria-current="page" href="#">
+              <a className="home" aria-current="page" href="#" onClick={toggleHomeVisibility}>
                 Home
                 <svg
                   viewBox="0 0 1024 1024"
@@ -85,7 +90,8 @@ function Main() {
         </div>
       </nav>
 
-      {/* Affichez la carte uniquement si isCardVisible est vrai */}
+      {/* Affichez les sections uniquement si elles sont visibles */}
+      {isHomeVisible && <Home onClose={toggleHomeVisibility} />}
       {isCardVisible && <Card onClose={toggleCardVisibility} />}
       {isProjectCardVisible && <ProjectCard onClose={toggleProjectCardVisibility} />}
     </div>

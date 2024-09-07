@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Card from "./card.jsx"; // Assurez-vous que le chemin du composant Card est correct
-import Project_card from "./project_card.jsx"; // Assurez-vous que le chemin du composant Card est correct
+import Project_card from "./card.jsx"; // Assurez-vous que le chemin du composant Card est correct
 
 export default function Main() {
   const [isCardVisible, setCardVisibility] = useState(false);

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Card, ProjectCard, Home } from "./InfoCards.jsx"; 
+import { Card, ProjectCard, Home } from "../components/InfoCards.jsx"; 
+import PDF from "../components/downloadPDF.jsx";
 
 // Add Functionality to the Main Component
 function Main() {

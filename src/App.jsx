@@ -1,7 +1,5 @@
-import "./styles/App.css";
-import "./assets/contacts.svg";
-import "./assets/house-solid.svg";
-import main from "./components/Home";
+import "./styles/Home.css";
+import main from "./pages/Home";
 import PDF from "./components/downloadPDF";
 
 function App() {

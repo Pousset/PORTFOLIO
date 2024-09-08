@@ -41,7 +41,6 @@ ProjectCard.propTypes = {
 };
 
 
-// Call the onClose function to close the card
 export function Card({ onClose }) {
   function showCard() {
     console.log("click");

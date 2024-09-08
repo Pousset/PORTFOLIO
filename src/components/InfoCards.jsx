@@ -1,26 +1,23 @@
 import PropTypes from "prop-types";
 import CVImage from "../assets/CV_Mathis_Piette.jpg"; 
+import PDF from "./downloadPDF";
 
-// Call the onClose function to close the card
-export function Card({ onClose }) {
-  function showCard() {
+export function Home({ onClose }) {
+  function showHome() {
     console.log("click");
     onClose(); 
   }
 
   return (
-    <div className="card" onClick={showCard}>
-      <h1>Presentation :</h1>
-      <h3>Nom : PIETTE</h3>
-      <h3>Prénom : Mathis</h3>
-      <h3>Age : 26ans</h3>
-      <h3>Mail : mathispiette@gmail.com</h3>
-      <h3>Téléphone : 06.79.43.21.20</h3>
+    <div className="home-section" onClick={showHome}>
+      <PDF />
+      <img src={CVImage} alt="CV Mathis Piette" />
     </div>
   );
 }
 
-Card.propTypes = {
+// Define the prop types for the Home component
+Home.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
@@ -43,20 +40,26 @@ ProjectCard.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export function Home({ onClose }) {
-  function showHome() {
+
+// Call the onClose function to close the card
+export function Card({ onClose }) {
+  function showCard() {
     console.log("click");
     onClose(); 
   }
 
   return (
-    <div className="home-section" onClick={showHome}>
-      <img src={CVImage} alt="CV Mathis Piette" />
+    <div className="card" onClick={showCard}>
+      <h1>Presentation :</h1>
+      <h3>Nom : PIETTE</h3>
+      <h3>Prénom : Mathis</h3>
+      <h3>Age : 26ans</h3>
+      <h3>Mail : mathispiette@gmail.com</h3>
+      <h3>Téléphone : 06.79.43.21.20</h3>
     </div>
   );
 }
 
-// Define the prop types for the Home component
-Home.propTypes = {
+Card.propTypes = {
   onClose: PropTypes.func.isRequired,
 };

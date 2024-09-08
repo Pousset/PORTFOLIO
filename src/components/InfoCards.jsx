@@ -48,6 +48,9 @@ export function Card({ onClose }) {
     onClose(); 
   }
 
+  /* Ajouter Photo a gauche avec Nom Prenom*/
+  /* Gateau au milieu avec age */
+  /* enveloppe a droite + Mail et en dessous télephone */
   return (
     <div className="card" onClick={showCard}>
       <h1>Presentation :</h1>

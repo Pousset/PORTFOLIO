@@ -1,13 +1,12 @@
-import "./styles/App.css";
+import "./styles/Home.css";
 import "./assets/contacts.svg";
 import "./assets/house-solid.svg";
-import main from "./components/Home";
-import PDF from "./components/downloadPDF";
+import main from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <div> {PDF} </div>
+      
       <div>{main()}</div>
     </div>
   );

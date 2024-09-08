@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
-import CVImage from "../assets/CV_Mathis_Piette.jpg"; // Assurez-vous que le chemin est correct
+import CVImage from "../assets/CV_Mathis_Piette.jpg"; 
 
+// Call the onClose function to close the card
 export function Card({ onClose }) {
   function showCard() {
     console.log("click");
-    onClose(); // Appeler la fonction onClose pour fermer la carte
+    onClose(); 
   }
 
   return (
@@ -23,10 +24,11 @@ Card.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
+// Call the onClose function to close the ProjectCard
 export function ProjectCard({ onClose }) {
   function showProjectCard() {
     console.log("click");
-    onClose(); // Appeler la fonction onClose pour fermer la carte
+    onClose(); 
   }
 
   return (
@@ -36,6 +38,7 @@ export function ProjectCard({ onClose }) {
   );
 }
 
+// // Define the prop types for the ProjectCard component
 ProjectCard.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
@@ -43,7 +46,7 @@ ProjectCard.propTypes = {
 export function Home({ onClose }) {
   function showHome() {
     console.log("click");
-    onClose(); // Appeler la fonction onClose pour fermer la section Home
+    onClose(); 
   }
 
   return (
@@ -53,6 +56,7 @@ export function Home({ onClose }) {
   );
 }
 
+// Define the prop types for the Home component
 Home.propTypes = {
   onClose: PropTypes.func.isRequired,
 };

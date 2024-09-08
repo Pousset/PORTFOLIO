@@ -1,7 +1,7 @@
-import "./App.css";
+import "./styles/App.css";
 import "./assets/contacts.svg";
 import "./assets/house-solid.svg";
-import main from "./components/main";
+import main from "./components/Home";
 
 function App() {
   return (

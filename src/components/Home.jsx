@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Card, ProjectCard, Home } from "./card.jsx"; // Assurez-vous que le chemin du composant est correct
+import { Card, ProjectCard, Home } from "./InfoCards.jsx"; 
 
+// Add Functionality to the Main Component
 function Main() {
   const [isCardVisible, setCardVisibility] = useState(false);
   const [isProjectCardVisible, setProjectCardVisibility] = useState(false);
@@ -26,11 +27,11 @@ function Main() {
             <h1>Bienvenue sur mon portfolio</h1>
           </a>
 
-          {/* <!-- Navbar Links --> */}
+          {/* Return Cards */}
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="main-nav">
               <a className="home" aria-current="page" href="#" onClick={toggleHomeVisibility}>
-                Home
+                CV
                 <svg
                   viewBox="0 0 1024 1024"
                   fill="currentColor"
@@ -74,7 +75,7 @@ function Main() {
               </a>
             </div>
 
-            {/* <!-- Navbar Social --> */}
+            {/* <!-- Return Social Link --> */}
             <div className="navbar-nav ms-auto">
               <a className="nav-link" href="#">
                 <i className="fab fa-github"></i>
@@ -90,7 +91,7 @@ function Main() {
         </div>
       </nav>
 
-      {/* Affichez les sections uniquement si elles sont visibles */}
+      {/* Show sections only if they are visible */}
       {isHomeVisible && <Home onClose={toggleHomeVisibility} />}
       {isCardVisible && <Card onClose={toggleCardVisibility} />}
       {isProjectCardVisible && <ProjectCard onClose={toggleProjectCardVisibility} />}

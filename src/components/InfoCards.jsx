@@ -52,6 +52,9 @@ export function Card({ onClose }) {
   /* Gateau au milieu avec age */
   /* enveloppe a droite + Mail et en dessous télephone */
   return (
+
+        
+    
     <div className="card" onClick={showCard}>
       <h1>Presentation :</h1>
       <h3>Nom : PIETTE</h3>

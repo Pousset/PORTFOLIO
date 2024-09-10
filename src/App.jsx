@@ -6,7 +6,6 @@ import main from "./pages/Home";
 function App() {
   return (
     <div>
-      
       <div>{main()}</div>
     </div>
   );

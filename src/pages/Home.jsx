@@ -22,7 +22,7 @@ function Main() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      
         <div className="container-fluid">
           <a className="main-text" href="#">
             <h1>Bienvenue sur mon </h1>
@@ -34,7 +34,7 @@ function Main() {
           </div>
 
           {/* Return Cards */}
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="collapse main-card-collapse" id="main-cardNavAltMarkup">
             <div className="main-nav">
               <a className="home" aria-current="page" href="#" onClick={toggleHomeVisibility}>
                 CV
@@ -95,7 +95,7 @@ function Main() {
             </div>
           </div>
         </div>
-      </nav>
+      
 
       {/* Show sections only if they are visible */}
       {isHomeVisible && <Home onClose={toggleHomeVisibility} />}

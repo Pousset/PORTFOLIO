@@ -76,7 +76,7 @@ yarn serve
 
 ## Contribuer
 
-Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter.
+Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter.p
 
 ## Licence
 

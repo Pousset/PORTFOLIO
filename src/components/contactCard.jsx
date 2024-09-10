@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Home.css'; // Assurez-vous d'avoir les styles nécessaires pour le mode sombre
-import "./contactCard.css";
+import "../styles/contactCard.css";
 // Contexte pour le mode sombre
 const ThemeContext = createContext();
 

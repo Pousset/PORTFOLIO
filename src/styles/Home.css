@@ -7,13 +7,31 @@
   font-weight: 700;
   max-width: 50%;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-text h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .home {
@@ -55,8 +73,10 @@
     rgb(76, 79, 106) 3.2%,
     rgb(118, 124, 163) 97.6%
   );
-  opacity: 0.5;
+  opacity: 0.5;  
 }
+
+
 
 /* Ajouter Photo a gauche */
 /* Gateau au milieu avec age */

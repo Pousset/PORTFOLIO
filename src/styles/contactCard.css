@@ -2,12 +2,6 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    background-color: white;
-}
-
 a {
     text-decoration: none;
 }
@@ -19,6 +13,7 @@ a {
     height: 400px;
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 70px;
     background-color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     transition: all 0.7s ease-in-out;

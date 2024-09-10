@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, ProjectCard, Home } from "../components/InfoCards.jsx"; 
-
+import ContactCard from '../components/contactCard';
 
 // Add Functionality to the Main Component
 function Main() {
@@ -25,8 +25,13 @@ function Main() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="main-text" href="#">
-            <h1>Bienvenue sur mon portfolio</h1>
+            <h1>Bienvenue sur mon </h1>
+            <b><h1>Portfolio</h1></b>
           </a>
+
+          <div>
+            <ContactCard />
+          </div>
 
           {/* Return Cards */}
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
